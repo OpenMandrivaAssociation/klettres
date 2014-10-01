@@ -1,11 +1,11 @@
-Name:		klettres
 Summary:	Language learning program
+Name:		klettres
 Version:	4.14.1
 Release:	1
+License:	GPLv2+
 Group:		Graphical desktop/KDE
-License:	GPLv2 LGPLv2 GFDL
-URL:		http://edu.kde.org/klettres
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+Url:		http://edu.kde.org/klettres
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel
 
 %description
@@ -16,12 +16,13 @@ of a new language, for children or for adults.
 %files
 %doc COPYING COPYING.DOC COPYING.LIB AUTHORS TODO
 %doc %{_kde_docdir}/HTML/en/klettres
+%{_kde_applicationsdir}/klettres.desktop
 %{_kde_appsdir}/klettres
 %{_kde_bindir}/klettres
-%{_kde_iconsdir}/*/*/apps/klettres.*
-%{_kde_applicationsdir}/klettres.desktop
-%{_kde_datadir}/config.kcfg/klettres.kcfg
 %{_kde_configdir}/klettres.knsrc
+%{_kde_datadir}/appdata/klettres.appdata.xml
+%{_kde_datadir}/config.kcfg/klettres.kcfg
+%{_kde_iconsdir}/*/*/apps/klettres.*
 
 #----------------------------------------------------------------------
 
@@ -38,6 +39,7 @@ of a new language, for children or for adults.
 %changelog
 * Mon Sep 29 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.1-1
 - New version 4.14.1
+- Update files
 
 * Tue Jul 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.13.3-1
 - New version 4.13.3
