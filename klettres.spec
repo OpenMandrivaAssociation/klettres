@@ -9,6 +9,16 @@ Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.
 BuildRequires:	kdelibs4-devel
 BuildRequires:	cmake(ECM)
 BuildRequires:	ninja
+BuildRequires:	cmake(KF5Completion)
+BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5Emoticons)
+BuildRequires:	cmake(KF5ItemModels)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5KDELibs4Support)
+BuildRequires:	cmake(KF5NewStuff)
+BuildRequires:	cmake(KF5WidgetsAddons)
+BuildRequires:	cmake(KF5ConfigWidgets)
+BuildRequires:	cmake(KF5CoreAddons)
 
 %description
 KLettres aims to help to learn the alphabet and then to read some syllables
