@@ -7,6 +7,8 @@ Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/klettres
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel
+BuildRequires:	cmake(ECM)
+BuildRequires:	ninja
 
 %description
 KLettres aims to help to learn the alphabet and then to read some syllables
@@ -28,13 +30,14 @@ of a new language, for children or for adults.
 
 %prep
 %setup -q
+%cmake_kde5
 
 %build
-%cmake_kde4
-%make
+ninja -C build
 
 %install
-%makeinstall_std -C build
+DESTDIR="%{buildroot}" ninja install -C build
+
 
 %changelog
 * Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.3-1
