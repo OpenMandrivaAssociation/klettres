@@ -28,13 +28,28 @@ of a new language, for children or for adults.
 %files
 %doc COPYING COPYING.DOC COPYING.LIB AUTHORS TODO                                                      
 %doc %{_docdir}/HTML/en/klettres                                                                       
-%{_datadir}/applications/kde4/klettres.desktop                                                         
-%{_datadir}/apps/klettres                                                                              
+%{_datadir}/applications/org.kde.klettres.desktop                                                                                                                                    
 %{_bindir}/klettres                                                                                    
-%{_datadir}/config/klettres.knsrc                                                                      
+%{_sysconfdir}/xdg/klettres.knsrc   
+%{_datadir}/kxmlgui5/klettres/klettresui.rc
 %{_datadir}/appdata/klettres.appdata.xml                                                               
 %{_datadir}/config.kcfg/klettres.kcfg                                                                  
 %{_iconsdir}/*/*/apps/klettres.* 
+%{_iconsdir}/hicolor/*/actions/klettres_* 
+%{_datadir}/klettres/pics/*
+%{_datadir}/klettres/sk.txt
+%{_datadir}/klettres/hu.txt
+%{_datadir}/klettres/es.txt
+%{_datadir}/klettres/fr/syllab/ad-*
+%{_datadir}/klettres/fr/sounds.xml
+%{_datadir}/klettres/fr/alpha/a-*
+%{_datadir}/klettres/en/syllab/*
+%{_datadir}/klettres/en/sounds.xml
+%{_datadir}/klettres/en/alpha/*
+%{_datadir}/klettres/de.txt
+%{_datadir}/klettres/data/sounds.xml
+%{_datadir}/klettres/da.txt
+%{_datadir}/klettres/cs.txt
 
 #----------------------------------------------------------------------
 
