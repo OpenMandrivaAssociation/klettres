@@ -35,11 +35,12 @@ of a new language, for children or for adults.
 %{_datadir}/appdata/klettres.appdata.xml                                                               
 %{_datadir}/config.kcfg/klettres.kcfg                                                                  
 %{_iconsdir}/*/*/apps/klettres.* 
-%{_iconsdir}/hicolor/*/actions/klettres_* 
+%{_datadir}/klettres/icons/hicolor/*/actions/klettres_* 
 %{_datadir}/klettres/pics/*
 %{_datadir}/klettres/sk.txt
 %{_datadir}/klettres/hu.txt
 %{_datadir}/klettres/es.txt
+%{_datadir}/klettres/nds.txt
 %{_datadir}/klettres/fr/syllab/ad-*
 %{_datadir}/klettres/fr/sounds.xml
 %{_datadir}/klettres/fr/alpha/a-*
