@@ -1,7 +1,7 @@
 Summary:	Language learning program
 Name:		klettres
-Version:	15.08.0
-Release:	2
+Version:	15.08.1
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/klettres
@@ -19,6 +19,12 @@ BuildRequires:	cmake(KF5NewStuff)
 BuildRequires:	cmake(KF5WidgetsAddons)
 BuildRequires:	cmake(KF5ConfigWidgets)
 BuildRequires:	cmake(KF5CoreAddons)
+BuildRequires:	cmake(Qt5Test)
+BuildRequires:	cmake(Qt5Core)
+BuildRequires:	cmake(Qt5Svg)
+BuildRequires:	cmake(Qt5Network)
+BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(Phonon4Qt5)
 
 %description
 KLettres aims to help to learn the alphabet and then to read some syllables
