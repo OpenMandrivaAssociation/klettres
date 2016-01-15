@@ -38,7 +38,7 @@ of a new language, for children or for adults.
 %{_bindir}/klettres                                                                                    
 %{_sysconfdir}/xdg/klettres.knsrc   
 %{_datadir}/kxmlgui5/klettres/klettresui.rc
-%{_datadir}/appdata/klettres.appdata.xml                                                               
+%{_datadir}/appdata/org.kde.klettres.appdata.xml                                                               
 %{_datadir}/config.kcfg/klettres.kcfg                                                                  
 %{_iconsdir}/*/*/apps/klettres.* 
 %{_datadir}/klettres/icons/hicolor/*/actions/klettres_* 
