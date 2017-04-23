@@ -1,6 +1,6 @@
 Summary:	Language learning program
 Name:		klettres
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -31,32 +31,48 @@ KLettres aims to help to learn the alphabet and then to read some syllables
 in different languages. It is meant to help learning the very first sounds
 of a new language, for children or for adults.
 
-%files
+%files -f %{name}.lang
 %doc COPYING COPYING.DOC COPYING.LIB AUTHORS TODO                                                      
-%doc %{_docdir}/HTML/en/klettres                                                                       
 %{_datadir}/applications/org.kde.klettres.desktop                                                                                                                                    
 %{_bindir}/klettres                                                                                    
 %{_sysconfdir}/xdg/klettres.knsrc   
 %{_datadir}/kxmlgui5/klettres/klettresui.rc
-%{_datadir}/appdata/org.kde.klettres.appdata.xml                                                               
+%{_datadir}/metainfo/org.kde.klettres.appdata.xml                                                               
 %{_datadir}/config.kcfg/klettres.kcfg                                                                  
 %{_iconsdir}/*/*/apps/klettres.* 
 %{_datadir}/klettres/icons/hicolor/*/actions/klettres_* 
 %{_datadir}/klettres/pics/*
-%{_datadir}/klettres/sk.txt
-%{_datadir}/klettres/hu.txt
-%{_datadir}/klettres/es.txt
-%{_datadir}/klettres/nds.txt
 %{_datadir}/klettres/fr/syllab/ad-*
 %{_datadir}/klettres/fr/sounds.xml
 %{_datadir}/klettres/fr/alpha/a-*
 %{_datadir}/klettres/en/syllab/*
 %{_datadir}/klettres/en/sounds.xml
 %{_datadir}/klettres/en/alpha/*
-%{_datadir}/klettres/de.txt
 %{_datadir}/klettres/data/sounds.xml
-%{_datadir}/klettres/da.txt
-%{_datadir}/klettres/cs.txt
+%lang(ar) %{_datadir}/klettres/ar
+%lang(cs) %{_datadir}/klettres/cs
+%lang(cs) %{_datadir}/klettres/cs.txt
+%lang(da) %{_datadir}/klettres/da
+%lang(da) %{_datadir}/klettres/da.txt
+%lang(de) %{_datadir}/klettres/de
+%lang(de) %{_datadir}/klettres/de.txt
+%lang(en_GB) %{_datadir}/klettres/en_GB
+%lang(es) %{_datadir}/klettres/es
+%lang(es) %{_datadir}/klettres/es.txt
+%lang(he) %{_datadir}/klettres/he
+%lang(hu) %{_datadir}/klettres/hu
+%lang(hu) %{_datadir}/klettres/hu.txt
+%lang(it) %{_datadir}/klettres/it
+%lang(lt) %{_datadir}/klettres/lt
+%lang(lt) %{_datadir}/klettres/lt.txt
+%lang(nb) %{_datadir}/klettres/nb
+%lang(nds) %{_datadir}/klettres/nds
+%lang(nds) %{_datadir}/klettres/nds.txt
+%lang(nl) %{_datadir}/klettres/nl
+%lang(pt_BR) %{_datadir}/klettres/pt_BR
+%lang(ru) %{_datadir}/klettres/ru
+%lang(sk) %{_datadir}/klettres/sk.txt
+%lang(uk) %{_datadir}/klettres/uk
 
 #----------------------------------------------------------------------
 
@@ -69,4 +85,4 @@ ninja -C build
 
 %install
 DESTDIR="%{buildroot}" ninja install -C build
-
+%find_lang klettres --with-html
