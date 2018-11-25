@@ -2,7 +2,7 @@
 
 Summary:	Language learning program
 Name:		klettres
-Version:	18.08.3
+Version:	18.11.80
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -33,6 +33,7 @@ in different languages. It is meant to help learning the very first sounds
 of a new language, for children or for adults.
 
 %files -f %{name}.lang
+%{_sysconfdir}/xdg/klettres.categories
 %doc COPYING COPYING.DOC COPYING.LIB AUTHORS TODO                                                      
 %{_datadir}/applications/org.kde.klettres.desktop                                                                                                                                    
 %{_bindir}/klettres                                                                                    
