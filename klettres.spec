@@ -2,7 +2,7 @@
 
 Summary:	Language learning program
 Name:		klettres
-Version:	20.04.1
+Version:	20.04.2
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -64,6 +64,7 @@ of a new language, for children or for adults.
 %lang(he) %{_datadir}/klettres/he
 %lang(hu) %{_datadir}/klettres/hu
 %lang(hu) %{_datadir}/klettres/hu.txt
+%lang(id) %{_datadir}/klettres/id
 %lang(it) %{_datadir}/klettres/it
 %lang(lt) %{_datadir}/klettres/lt
 %lang(lt) %{_datadir}/klettres/lt.txt
