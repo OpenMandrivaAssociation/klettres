@@ -2,7 +2,7 @@
 
 Summary:	Language learning program
 Name:		klettres
-Version:	20.08.3
+Version:	20.11.80
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -37,7 +37,7 @@ of a new language, for children or for adults.
 %doc COPYING COPYING.DOC COPYING.LIB AUTHORS TODO                                                      
 %{_datadir}/applications/org.kde.klettres.desktop                                                                                                                                    
 %{_bindir}/klettres                                                                                    
-%{_sysconfdir}/xdg/klettres.knsrc   
+%{_datadir}/knsrcfiles/klettres.knsrc   
 %{_datadir}/kxmlgui5/klettres/klettresui.rc
 %{_datadir}/metainfo/org.kde.klettres.appdata.xml                                                               
 %{_datadir}/config.kcfg/klettres.kcfg                                                                  
