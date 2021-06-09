@@ -2,7 +2,7 @@
 
 Summary:	Language learning program
 Name:		klettres
-Version:	21.04.1
+Version:	21.04.2
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
