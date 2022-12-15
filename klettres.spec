@@ -2,7 +2,7 @@
 
 Summary:	Language learning program
 Name:		klettres
-Version:	22.08.3
+Version:	22.12.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -49,7 +49,6 @@ of a new language, for children or for adults.
 %{_datadir}/klettres/en/syllab/*
 %{_datadir}/klettres/en/sounds.xml
 %{_datadir}/klettres/en/alpha/*
-%{_datadir}/klettres/data/sounds.xml
 %lang(ar) %{_datadir}/klettres/ar
 %lang(cs) %{_datadir}/klettres/cs
 %lang(cs) %{_datadir}/klettres/cs.txt
@@ -66,7 +65,6 @@ of a new language, for children or for adults.
 %lang(id) %{_datadir}/klettres/id
 %lang(it) %{_datadir}/klettres/it
 %lang(lt) %{_datadir}/klettres/lt
-%lang(lt) %{_datadir}/klettres/lt.txt
 %lang(ml) %{_datadir}/klettres/ml
 %lang(nb) %{_datadir}/klettres/nb
 %lang(nds) %{_datadir}/klettres/nds
@@ -76,6 +74,7 @@ of a new language, for children or for adults.
 %lang(pt_BR) %{_datadir}/klettres/pt_BR
 %lang(ru) %{_datadir}/klettres/ru
 %lang(sk) %{_datadir}/klettres/sk.txt
+%lang(tn) %{_datadir}/klettres/tn
 %lang(uk) %{_datadir}/klettres/uk
 
 #----------------------------------------------------------------------
