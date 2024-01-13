@@ -3,7 +3,7 @@
 Summary:	Language learning program
 Name:		plasma6-klettres
 Version:	24.01.90
-Release:	2
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/klettres
@@ -18,12 +18,17 @@ BuildRequires:	cmake(KF6NewStuff)
 BuildRequires:	cmake(KF6WidgetsAddons)
 BuildRequires:	cmake(KF6ConfigWidgets)
 BuildRequires:	cmake(KF6CoreAddons)
+BuildRequires:	cmake(KF6XmlGui)
 BuildRequires:	cmake(Qt6Test)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6Svg)
 BuildRequires:	cmake(Qt6Network)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(Phonon4Qt6)
+BuildRequires:  cmake(Qt6Qml)
+BuildRequires:  cmake(Qt6QmlCore)
+BuildRequires:  cmake(Qt6QmlNetwork)
+BuildRequires:  qt6-qtbase-theme-gtk3
 
 %description
 KLettres aims to help to learn the alphabet and then to read some syllables
