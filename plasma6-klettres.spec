@@ -5,7 +5,7 @@
 
 Summary:	Language learning program
 Name:		plasma6-klettres
-Version:	24.05.1
+Version:	24.05.2
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
