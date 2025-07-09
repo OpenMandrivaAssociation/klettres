@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Summary:	Language learning program
-Name:		plasma6-klettres
+Name:		klettres
 Version:	25.04.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
