@@ -5,7 +5,7 @@
 
 Summary:	Language learning program
 Name:		klettres
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -39,12 +39,17 @@ BuildRequires:  cmake(Qt6QmlCore)
 BuildRequires:  cmake(Qt6QmlNetwork)
 BuildRequires:  qt6-qtbase-theme-gtk3
 
+%rename plasma6-klettres
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 KLettres aims to help to learn the alphabet and then to read some syllables
 in different languages. It is meant to help learning the very first sounds
 of a new language, for children or for adults.
 
-%files -f klettres.lang
+%files -f %{name}.lang
 %{_datadir}/qlogging-categories6/klettres.categories
 %{_datadir}/applications/org.kde.klettres.desktop                                                                                                                                    
 %{_bindir}/klettres                                                                                    
@@ -87,18 +92,3 @@ of a new language, for children or for adults.
 %lang(sk) %{_datadir}/klettres/sk.txt
 %lang(tn) %{_datadir}/klettres/tn
 %lang(uk) %{_datadir}/klettres/uk
-
-#----------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n klettres-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-ninja -C build
-
-%install
-DESTDIR="%{buildroot}" ninja install -C build
-%find_lang klettres --with-html
